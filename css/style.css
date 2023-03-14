@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+* { 
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: font-family: 'Poppins', sans-serif;
+    line-height: 1.75;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url("../img/candle2.webp");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text a {
+    background-color: #cfc4b5;
+    border: 2px solid #d8bf9df7;
+    color: #907f6f;
+    display: inline-block;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    animation-name: moveInTop;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInTop {
+    0% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.intro-image__text a:hover {
+    transform: scale(1.1);
+}
+
+.intro-text {
+    background-color: #635142;
+    color: beige;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 0 15rem;
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+    margin-top: -5rem;
+}
+
+.intro-text__textbox h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-shadow:0 0 3px rgb(43, 19, 4), 0 0 5px rgb(43, 19, 4);
+}
+
+.text-solid {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    background-image: url("../img/candle3.webp");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5rem;
+}
+
+.packaging-image__text a {
+    background-color: #989a9a;
+    border: 2px solid #767676;
+    color: #c3c4cc;
+    display: inline-block;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.packaging-image__text a:hover {
+    transform: scale(1.1);
+}
+
+.packaging-text {
+    background-color: #62523c;
+    color: #c3c4cc;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding: 0 15rem;
+    text-align: center;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+    margin-top: -5rem;
+}
+
+.packaging_text__textbox h3 {
+    color:rgb(92, 132, 92);
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: rgb(38, 58, 38);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    background-image: url("../img/candle1.jpeg");
+    background-size: cover;
+    background-position: top;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5rem;
+}
+
+.tutorials-image__text a {
+    background-color: rgba(184, 124, 11, 0.571);
+    border: 2px solid rgba(103, 68, 3, 0.778);
+    color: #ae4027;
+    display: inline-block;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.tutorials-image__text a:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #767676;
+    color: rgb(237, 192, 108);
+    font-size: 1rem;
+    height: 150px;
+    margin-top: -5rem;
+    padding: 1 rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    color: rgb(237, 192, 108);
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: rgb(173, 117, 14);
+    transform: scale(1.1);
+}
